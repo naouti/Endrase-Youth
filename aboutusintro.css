@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+.about-us{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* #f1d9cb #ddd #f1c998 #f1eae1*/
+.toph{
+  padding-top: 50px;
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #f1eae1;
+}
+.ourmission, .two{
+  margin-top: -150px;
+}
+.about-us > .about >.pic{
+  height: auto;
+  width:  302px;
+}
+.about-us > .about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 60px;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.one h2, .two h2{
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #ca7e37;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+@media (max-width: 1045px) {
+  .header1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing {
+    margin-bottom: 60px;
+  }
+  header .headers {
+    margin-top: 280px;
+  }
+  .box {
+    margin-bottom: 20px;
+  }
+  .box2 {
+    margin-bottom: 30px;
+  }
+  .box3 {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 935px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+  .primary > .links {
+    display: none;
+  }
+  .row.secondary {
+    flex-direction: column;
+  }
+  .col {
+    flex-direction: column;
+  }
+  .col1,
+  .col2 {
+    width: 100%;
+    margin-right: 0;
+  }
+  .header1 {
+    z-index: 1000;
+    overflow: hidden;
+    flex-direction: column;
+    height: 200px;
+  }
+  .features h3 {
+    text-indent: 0;
+  }
+  .container {
+    height: 300px;
+  }
+  .container > .headers {
+    text-align: justify;
+    height: 325px;
+  }
+  .pricing {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .containera {
+    width: 90vmin;
+  }
+  .container > .headers > .top {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 530px) {
+  .feature h3 {
+    font-size: 20px;
+  }
+  .feature p {
+    font-size: 15px;
+  }
+  .about-us > .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .about-us > .about > .pic {
+    width: 100%;
+    max-width: 300px;
+  }
+  .text h2 {
+    font-size: 40px;
+  }
+  .text h5 {
+    font-size: 18px;
+  }
+  .text p {
+    font-size: 16px;
+  }
+  .hire {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 376px) {
+  .feature h3 {
+    font-size: 13px;
+  }
+  .feature p {
+    font-size: 10px;
+  }
+  .text h2 {
+    font-size: 30px;
+  }
+  .text h5 {
+    font-size: 16px;
+  }
+  .text p {
+    font-size: 14px;
+  }
+}

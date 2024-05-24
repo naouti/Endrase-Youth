@@ -1,0 +1,28 @@
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: gold; /* Blue color for button */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for the button */
+.floating-button:hover {
+    background-color: goldenrod; /* Darker blue color on hover */
+}
+
+/* Styling for the button icon */
+.button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

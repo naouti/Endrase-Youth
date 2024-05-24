@@ -1,0 +1,74 @@
+.evpage{
+    margin-top: 50px;
+    margin-left: 20px;
+    text-align: center;
+}
+.evpage span{
+
+    color: goldenrod;
+}
+.evsection{
+  margin-top: 150px;
+}
+.evsection2{
+  margin-top: 250px;
+}
+.event a{
+    font-weight: 900;
+  }
+.event-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .event-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .event-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .event-box:hover i{
+    color: goldenrod;
+  }
+  .event-box a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .event-box i {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .event-box h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  
+  .event-box:active {
+    transform: scale(0.95);
+  }
+

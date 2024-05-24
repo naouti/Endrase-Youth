@@ -1,0 +1,41 @@
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  .number {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .number h2{
+    transition:  0.3s ease-in-out;
+  }
+  
+  .number:hover h2{
+    transform: scale(1.1);
+    color: goldenrod;
+  }
+  
+  .number h2 {
+    font-size: 50px;
+    color: #333;
+  }
+  
+  .number p {
+    font-size: 14px;
+    color: #666;
+  }
+.home a{
+    font-weight: 900;
+  }
+  @media screen and (max-width: 850px) {
+    
+    .numbers{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  }

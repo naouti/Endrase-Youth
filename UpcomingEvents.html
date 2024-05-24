@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Enderase Homepage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="UpcomingEvents.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <script >
+    // JavaScript to toggle the visibility of event details on button click
+document.addEventListener('DOMContentLoaded', function() {
+  var dropbtns = document.getElementsByClassName('dropbtn');
+  
+  Array.from(dropbtns).forEach(function(dropbtn) {
+    dropbtn.addEventListener('click', function() {
+      var eventDetails = this.parentNode.querySelector('.event-description');
+      var countdownTimer = this.parentNode.querySelector('.countdown-timer');
+      eventDetails.classList.toggle('hidden');
+      countdownTimer.classList.toggle('hidden');
+    });
+  });
+});
+    // Set the dates we're counting down to for each attraction
+    var countDownDate1 = new Date("Apr 30, 2024 00:00:00").getTime();
+    var countDownDate2 = new Date("May 15, 2024 12:00:00").getTime();
+    var countDownDate3 = new Date("Jun 1, 2024 18:00:00").getTime();
+
+    // Update the countdown for Nature Trails every 1 second
+    var x1 = setInterval(function () {
+        updateCountdown(countDownDate1, "countdown1");
+    }, 1000);
+
+    // Update the countdown for Visit the Animals every 1 second
+    var x2 = setInterval(function () {
+        updateCountdown(countDownDate2, "countdown2");
+    }, 1000);
+
+    // Update the countdown for Seasonal Events every 1 second
+    var x3 = setInterval(function () {
+        updateCountdown(countDownDate3, "countdown3");
+    }, 1000);
+
+    // Function to update countdown for each attraction
+    function updateCountdown(countDownDate, countdownId) {
+        // Get the current date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the countdown date
+        var distance = countDownDate - now;
+
+        // Calculate days, hours, minutes and seconds remaining
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the countdown
+        document.getElementById(countdownId).innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the countdown is over, display a message
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById(countdownId).innerHTML = "EXPIRED";
+        }
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header1 sticky">
+    <div class="logo box1">
+      <img src="images/logo_color.png" alt="Logo"> 
+      Enderase Youth Association
+    </div>
+    <div class="nav-bar box2">
+        <nav>
+            <div class="links">
+                <a href="indo.html">Home</a>
+            </div>
+    
+            <div class="links">
+                <a href="aboutUs.html">About Us</a>
+            </div>
+    
+            <div class="links">
+                <a href="events.html">Events</a>
+            </div>
+            
+            <div class="links">
+                <a href="contactUs1.html">ContactUs</a>
+            </div>
+          
+        </nav>
+    </div>
+    <div class="btn-signup box3">
+        <a href="#" class="sign-up-btn">Join Us</a>
+    </div>
+  </header>
+<section>
+  <section class="uphead">
+    <h2>Upcoming Events</h2>
+      <div class="event-list">
+        <div class="event">
+          <div class="event-image">
+            <img src="images/givingforliving.jpg" alt="Event 1">
+            <div class="image-overlay">
+              <h3>Event 1</h3>
+            </div>
+          </div>
+          <div class="event-details">
+            <h3>Giving for Living</h3>
+            <p>Date: September 1, 2023</p>
+            <p>Countdown: <div id="countdown1"></div></p>
+            <button class="dropbtn">Details</button>
+            <div class="event-description hidden">
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac lacus id libero viverra.</p>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-image">
+            <img src="images/givingforliving.jpg" alt="Event 1">
+            <div class="image-overlay">
+              <h3>Event 1</h3>
+            </div>
+          </div>
+          <div class="event-details">
+            <h3>Fashion week Africa 2024 alksdf;sldjlk</h3>
+            <p>Date: September 1, 2024</p>
+            <p>Countdown: <div id="countdown2"></div></p>
+            <button class="dropbtn">Details</button>
+            <div class="event-description hidden">
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac lacus id libero viverra.</p>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-image">
+            <img src="images/givingforliving.jpg" alt="Event 1">
+            <div class="image-overlay">
+              <h3>Event 1</h3>
+            </div>
+          </div>
+          <div class="event-details">
+            <h3>Taya Training-Advocacy</h3>
+            <p>Date: September 1, 2023</p>
+            <p>Countdown: <div id="countdown3"></div></p>
+            <button class="dropbtn">Details</button>
+            <div class="event-description hidden">
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac lacus id libero viverra.</p>
+            </div> 
+          </div>
+        </div>
+    
+        <!-- Add more events here -->
+    
+      </div>
+    </section>
+  </section>
+    <div class="footerend">
+        <footer>
+
+        <div class="row primary">
+            <div class="column about">
+              <h3>Enderase Volunteers network</h3>
+              <p>
+                Introduction Enderase (Amharic ‘እንደራሴ’) used to express shared experience or understanding with someone else. It suggests that the speaker can relate to the feelings, thoughts, or experiences of another person because they have gone through something similar. Enderase is a way to show solidarity and support for others.
+              </p>
+            </div>
+            <div class="column links">
+              <h3></h3>
+              <ul>
+                <li>
+                  <a href="#faq"></a>
+                </li>
+                <li>
+                  <a href="#cookies-policy"></a>
+                </li>
+                <li>
+                  <a href="#terms-of-services"></a>
+                </li>
+                <li>
+                  <a href="#support"></a>
+                </li>
+                <li>
+                  <a href="#careers"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="column subscribe">
+              <h3>Subscribe</h3>
+              <div>
+                <input type="email" placeholder="Your email id here" />
+                <button class="buttonfooter">Subscribe</button>
+              </div>
+              <div class="social">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-telegram"></i>
+              </div>
+            </div>
+          </div>
+        <div class="row secondary">
+          <div>
+            <p>
+              <i class="fas fa-phone-alt"></i>
+            </p>
+            <p>+251977244501</p>
+          </div>
+          <div>
+            <p><i class="fas fa-envelope"></i></p>
+            <p>endraseet@gmail.com</p>
+          </div>
+          <div>
+            <p><i class="fas fa-map-marker-alt"></i></p>
+            <p>Bole Medihaniyalem, Addis Abeba, Robel Plaza</p>
+          </div>
+        </div>
+        <div class="row copyright">
+          <p>Copyright &copy; 2024 EnderaseVolunteer | All Rights Reserved</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
