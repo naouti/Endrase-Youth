@@ -7,7 +7,7 @@
 }
 /* #f1d9cb #ddd #f1c998 #f1eae1*/
 .toph{
-  padding-top: 50px;
+  padding-top: 150px;
 }
 .about-us{
   height: 100vh;
@@ -15,12 +15,10 @@
   padding: 90px 0;
   background: #f1eae1;
 }
-.ourmission, .two{
-  margin-top: -150px;
-}
+
 .about-us > .about >.pic{
   height: auto;
-  width:  302px;
+  width: 210px;
 }
 .about-us > .about{
   width: 1130px;
@@ -29,16 +27,15 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 60px;
+  gap: 0px;
 }
 .text{
   width: 540px;
 }
 .text h2{
-  font-size: 90px;
-  font-weight: 600;
+  font-size: 70px;
+  font-weight: 500;
   margin-bottom: 10px;
-
 }
 .one h2, .two h2{
   font-size: 60px;
@@ -54,7 +51,7 @@ span{
   color: #ca7e37;
 }
 .text p{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 25px;
   letter-spacing: 1px;
 }
@@ -80,6 +77,9 @@ span{
     flex-direction: column;
     align-items: center;
   }
+  .about-us > .about{
+    gap: 60px;
+  }
   .pricing {
     margin-bottom: 60px;
   }
@@ -99,6 +99,9 @@ span{
 @media (max-width: 935px) {
   .row.primary {
     grid-template-columns: 1fr;
+  }
+  .about-us> .one1{
+    margin-top: 30px;
   }
   .primary > .links {
     display: none;
@@ -145,12 +148,29 @@ span{
   .feature h3 {
     font-size: 20px;
   }
+  
+  .about-us{
+    height: 115vh;
+  }
+  .toph {
+    padding-top: 170px;
+}
+  .about-us > .about > .picl{
+    display: none;
+  }
+  .about-us> .one1{
+    margin-top: 160px;
+  }
+  .about-us> .two2{
+    margin-top: 60px;
+  }
   .feature p {
     font-size: 15px;
   }
   .about-us > .about {
     flex-direction: column;
     text-align: center;
+    gap: 0px;
   }
   .text {
     width: 100%;
@@ -158,10 +178,10 @@ span{
   }
   .about-us > .about > .pic {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
   }
   .text h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .text h5 {
     font-size: 18px;
@@ -176,6 +196,18 @@ span{
 @media (max-width: 376px) {
   .feature h3 {
     font-size: 13px;
+  }
+  .about-us{
+    width: 103%;
+  }
+  .toph{
+    margin-top: -30px;
+  }
+  .about-us> .one1{
+    margin-top: 150px;
+  }
+  .about-us> .two2{
+    margin-top: -10px;
   }
   .feature p {
     font-size: 10px;
