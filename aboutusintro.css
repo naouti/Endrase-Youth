@@ -115,6 +115,9 @@ span{
   .about-us > .about{
     gap: 60px;
   }
+  .aboutusx{
+  height: 48vh;
+  }
   .pricing {
     margin-bottom: 60px;
   }
@@ -136,7 +139,7 @@ span{
     grid-template-columns: 1fr;
   }
   .aboutusx{
-    height: 175vh;
+    height: 180vh;
   }
   .aboutx > .values{
     flex-direction: column;
@@ -193,7 +196,7 @@ span{
     font-size: 20px;
   }
   .aboutusx{
-    height: 162vh;
+    height: 165vh;
   }
   .aboutusx > .texts h2{
     font-size: 30px;
@@ -247,7 +250,7 @@ span{
     font-size: 13px;
   }
   .aboutusx{
-    height: 165vh;
+    height: 168vh;
     width: 103%;
   }
   .aboutusx > .texts h2{
