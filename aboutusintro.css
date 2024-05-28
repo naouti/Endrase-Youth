@@ -195,6 +195,9 @@ span{
   .feature h3 {
     font-size: 20px;
   }
+  .exec-heading{
+    margin-top: 300px;
+  }
   .aboutusx{
     height: 165vh;
   }
