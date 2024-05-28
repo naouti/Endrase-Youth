@@ -455,9 +455,13 @@ img {
     flex-direction: row;
     margin-top: 0.5em;
   }
-  .social i:hover {
+.social a{
+    color: aliceblue;
+  }
+  .social a:hover {
     color: #e6a10c;
   }
+
   .row.secondary {
     display: flex;
     justify-content: space-around;
