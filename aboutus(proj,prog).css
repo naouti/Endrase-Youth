@@ -110,4 +110,9 @@
     .program-card{
         flex-direction: column;
     }
+    .program-image img{
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
