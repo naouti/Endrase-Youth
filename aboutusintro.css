@@ -72,6 +72,41 @@ span{
   background: #000;
   border: 1px solid #4070f4;
 }
+.aboutusx{
+  height: 62vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #f1eae1;
+  padding-top: 0px;;
+}
+.aboutusx > .texts h2{
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-left: 100px;
+}
+.aboutx{
+  display: flex;
+  flex-direction: column;
+}
+.values{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.aboutx > .values > .cont img{
+  width: 180px;
+  margin: 40px;
+}
+.aboutx> .values > .cont{
+  width: fit-content;
+}
+.aboutx> .values > .cont h3{
+  text-align: center;
+}
+
+
 @media (max-width: 1045px) {
   .header1 {
     flex-direction: column;
@@ -100,6 +135,15 @@ span{
   .row.primary {
     grid-template-columns: 1fr;
   }
+  .aboutusx{
+    height: 175vh;
+  }
+  .aboutx > .values{
+    flex-direction: column;
+  }
+  .aboutx > .values > .cont img {
+    width: 180px;
+}
   .about-us> .one1{
     margin-top: 30px;
   }
@@ -148,7 +192,12 @@ span{
   .feature h3 {
     font-size: 20px;
   }
-  
+  .aboutusx{
+    height: 162vh;
+  }
+  .aboutusx > .texts h2{
+    font-size: 30px;
+  }
   .about-us{
     height: 115vh;
   }
@@ -196,6 +245,13 @@ span{
 @media (max-width: 376px) {
   .feature h3 {
     font-size: 13px;
+  }
+  .aboutusx{
+    height: 165vh;
+    width: 103%;
+  }
+  .aboutusx > .texts h2{
+    font-size: 40px;
   }
   .about-us{
     width: 103%;
